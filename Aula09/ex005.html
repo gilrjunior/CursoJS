@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 5</title>
+
+    <style>
+
+        body {
+
+            background-color: mediumslateblue;
+            color: white;
+            font: normal 18pt Arial;
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <H1>Estudos sobre o DOM</H1>
+    <p class="msg1">Aqui está o resultado</p>
+    <p id="msg2">Aprendendo a usar o <strong>DOM</strong> em JavaScript </p>
+    <div name="msg3">Clique em mim</div>
+
+    <script>
+
+        //document.write("Está escrito assim: "+document.getElementsByTagName('p')[0].innerText)
+        //document.write("Está escrito assim: "+document.getElementById('msg2').innerHTML)
+        //document.write("Está escrito assim: "+document.getElementsByClassName('msg1')[0].innerHTML)
+        //document.write("Está escrito assim: "+document.getElementsByName('msg3')[0].innerHTML)
+
+        var d = document.querySelector("p.msg1")
+        d.style.color = 'blue'
+
+    </script>
+
+</body>
+</html>
